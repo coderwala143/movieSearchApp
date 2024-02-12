@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.inputBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.inputBox>input{
+    width: 250px;
+    padding: 20px;
+    height: 40px;
+    outline: none;
+    color: rgb(30, 103, 103);
+    text-align: left;
+    font-size: 1.2rem;
+    border: 3px solid rgb(33, 106, 165);
+    border-radius: 10px;
+}
+
+.main{
+    width: 100%;    
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: auto;
+}
+.box{
+    width: 300px;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* border: 2px solid red; */
+}
+.img{
+    width: 100%;
+
+    /* border: 1px solid red; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.img  img{
+    width: 100%;
+    transition: 0.3s;
+    
+}
+.description{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.523);
+    color: black;
+    transition: height 0.5s;
+    
+}
+.box:hover img{
+    transform: scale(1.05);
+}
+
+.box:hover .description{
+    height: 100%;
+    /* color: white; */
+}
